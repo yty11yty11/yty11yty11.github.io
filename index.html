@@ -2,8 +2,26 @@
 <html>
   <head>
     <title>yty11의 html 연구소</title>
+    <style type="text/css">
+   .CSSTree UL {
+    display:none;
+   }
+   .CSSTree INPUT[type="checkbox"] { 
+    display:none; 
+   }
+   .CSSTree INPUT[type="checkbox"]:checked ~ UL {
+    display:block;
+   }
+   </style>
   </head>
   <body>
     <h1>이제 html을 연구해보자</h1>
+   <ul class="CSSTree">
+    <li>
+     <input type="checkbox" id="Item1" />
+     <label for="Item1">Item 1</label>
+     <ul><li>Sub of 1</li></ul>
+    </li>
+   </ul>
   </body>
 </html>
